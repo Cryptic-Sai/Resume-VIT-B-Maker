@@ -1,0 +1,35 @@
+.container{
+    padding : 50px 30px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    background-color: rgb(232, 227, 250);
+    min-height: 85vh;
+}
+
+.heading{
+    /* padding: 30px;
+    text-align: center; */
+    font-size: 4.0rem;
+    font-weight: bold;
+    /* text-decoration-color: rgb(218, 102, 218); */
+    margin: 0 auto;
+    line-height: 1.25em;
+    max-width: 450px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+span{
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    background-image: linear-gradient(to right , rgb(102, 62, 245) , rgb(102, 62, 245) );
+}
+
+.right imp{
+    width: 400px;
+}

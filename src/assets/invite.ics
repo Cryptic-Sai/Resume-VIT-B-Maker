@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20230620T173000
+DTEND;TZID=Asia/Kolkata:20230620T190000
+DTSTAMP:20230620T112213Z
+ORGANIZER;CN=siva.timmisetty@f13.tech:mailto:siva.timmisetty@f13.tech
+UID:4cmg52lec709ovlq8ck4lmeojg@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=priyanshu.singh@f13.tech;X-NUM-GUESTS=0:mailto:priyanshu.singh@f13.
+ tech
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=siva.timmisetty@f13.tech;X-NUM-GUESTS=0:mailto:siva.timmisetty@f13.tech
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=veera.uppalla@f13.tech;X-NUM-GUESTS=0:mailto:veera.uppalla@f13.tech
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ingita.khare@f13.tech;X-NUM-GUESTS=0:mailto:ingita.khare@f13.tech
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=sai.anand@f13.tech;X-NUM-GUESTS=0:mailto:sai.anand@f13.tech
+X-GOOGLE-CONFERENCE:https://meet.google.com/hxe-okxj-vsu
+X-MICROSOFT-CDO-OWNERAPPTID:823791651
+CREATED:20230620T105713Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hx
+ e-okxj-vsu\nOr dial: (US) +1 518-552-0098 PIN: 429377127#\nMore phone numbe
+ rs: https://tel.meet/hxe-okxj-vsu?pin=9335835355664&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230620T112211Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Team Aurora Interaction and Discussion session for Task-1
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

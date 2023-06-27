@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.heading{
+        /* padding: 30px;
+    text-align: center; */
+    font-size: 2.0rem;
+    font-weight: bold;
+    /* text-decoration-color: rgb(218, 102, 218); */
+    margin: 0 auto;
+    /* line-height: 1.25em; */
+    max-width: 450px;
+    color: rgb(0, 0, 0);
+    /* letter-spacing: 1px; */
+}
+
+.toolbar{
+    width: 100%;
+    display: flex;
+    gap: 30%;
+    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+.toolbar button{
+   
+   padding: 0px 16px;
+   border-radius: 5px;
+   height: 100%;
+   background-color: rgb(211, 182, 238);
+   font-size: 1.0em;
+   font-weight: 500;
+   outline: none;
+   border: none;
+   letter-spacing: 1px;
+   cursor: pointer;
+   /* transition-duration: 4ms; */
+}
+
+/* .button :hover{
+ background-color: red;
+ color: white;
+} */
