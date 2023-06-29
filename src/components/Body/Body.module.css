@@ -29,20 +29,20 @@
 }
 .toolbar button{
    
-   padding: 0px 16px;
-   border-radius: 5px;
+   padding: 6px 16px;
+   border-radius: 12px;
    height: 100%;
    background-color: rgb(211, 182, 238);
    font-size: 1.0em;
    font-weight: 500;
    outline: none;
    border: none;
-   letter-spacing: 1px;
+   letter-spacing: 2px;
    cursor: pointer;
    /* transition-duration: 4ms; */
 }
-
-/* .button :hover{
+/* 
+.button :hover{
  background-color: red;
  color: white;
 } */

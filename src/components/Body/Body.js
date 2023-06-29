@@ -1,10 +1,10 @@
 import React from 'react';
-// import Editor from '../Editor/Editor';
+import Editor from '../Editor/Editor';
 import styles from './Body.module.css';
 
 function Body() {
   const sections = {
-    basicInfo: "Basic Info",
+    basicInfo: "Basic-Info",
     education: "Education",
     project: "Academic Projects",
     workExp: "Work Experience",
@@ -34,3 +34,5 @@ function Body() {
 }
 
 export default Body
+
+ 
