@@ -61,7 +61,7 @@
     flex-direction: column;
     gap: 24px;
   }
-  
+    
   .detail .row {
     display: flex;
     gap: 60px;
@@ -78,46 +78,7 @@
     flex: 1;
   }
   
-  /* .chips {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-  }
   
-  .chips .new {
-    color: #239ce2;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer;
-  } */
-  
-  /* .chip {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    padding: 4px 8px;
-    background-color: #808080;
-    border-radius: 20px;
-    cursor: default;
-  } */
-  /* .chip p {
-    font-weight: 500;
-    line-height: 1.25rem;
-    color: #fff;
-  }
-  .chip svg {
-    color: #fff;
-    height: 18px;
-    width: 8px;
-    cursor: pointer;
-  }
-  
-  .chips .active { 
-    background-color: #239ce2;
-  } */
-  
-
   .body button {
     width: fit-content;
     padding: 8px 16px;

@@ -9,157 +9,114 @@ function Editor(props) {
     const[activeSectionKey, setActiveSectionKey] = React.useState
     (Object.keys(sections)[0]
     );
-    const workExpBody = (
+    const basicInfoBody = (
         <div className={styles.detail}>
           <div className= {styles.row}>
-              <div><label>Titile</label>
-            <InputControl 
+              <div><label>Name</label>
+            <InputControl
+              label="Name"
+              placeholder="Enter your Full name eg. SAI"
+            //   value={values.name}
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, name: event.target.value }))
+            //   }
+            /></div>
+            <div><label>Registraion Number</label>
+            <InputControl
               label="Title"
-              placeholder="Enter title eg. Frontend developer"
             //   value={values.title}
+              placeholder="Enter your Registraion Number "
             //   onChange={(event) =>
             //     setValues((prev) => ({ ...prev, title: event.target.value }))
             //   }
             /></div>
-
-            <div><label>Company Name</label>
-            <InputControl
-              label="Company Name"
-              placeholder="Enter company name eg. amazon"
-            //   value={values.companyName}
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, companyName: event.target.value }))
-            //   }
-            />
-            </div>
           </div>
           <div className= {styles.row}>
-              <div><label>Certification Link</label>
+              <div><label>Email</label>
             <InputControl
-              label="Certificate Link"
-              placeholder="Enter certificate link"
-            //   value={values.certificationLink}
+              label="Email"
+            //   value={values.email}
+              placeholder="Enter your Email"
             //   onChange={(event) =>
-            //     setValues((prev) => ({
-            //       ...prev,
-            //       certificationLink: event.target.value,
-            //     }))
+                // setValues((prev) => ({ ...prev, email: event.target.value }))
             //   }
-            /> </div>
-            <div><label>Start Date</label>
-            <InputControl
-            //   label="Start Date"
-              type="date"
-              placeholder="Enter start date of work"
-            //   value={values.startDate}
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, startDate: event.target.value }))
-            //   }
-            />
-            </div>
-          </div>
-          <div className= {styles.row}>
-          <div><label>Enter work description</label>
-            <InputControl
-              placeholder="Line 1"
-            //   value={values.points ? values.points[0] : ""}
-            //   onChange={(event) => handlePointUpdate(event.target.value, 0)}
-            />
-            <InputControl
-              placeholder="Line 2"
-            //   value={values.points ? values.points[1] : ""}
-            //   onChange={(event) => handlePointUpdate(event.target.value, 1)}
-            />
-            <InputControl
-              placeholder="Line 3"
-            //   value={values.points ? values.points[2] : ""}
-            //   onChange={(event) => handlePointUpdate(event.target.value, 2)}
             /></div>
-            <div><label>End Date</label>
+            <div><label>Enter Phone</label>
             <InputControl
-            //   label="End Date"
-              type="date"
-              placeholder="Enter end date of work"
-            //   value={values.endDate}
+              label="Enter phone"
+            //   value={values.phone}
+              placeholder="Enter your Phone number"
             //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, endDate: event.target.value }))
+            //     setValues((prev) => ({ ...prev, phone: event.target.value }))
             //   }
             /></div>
           </div>
-    
-          
-        </div>
-      );
-      const projectBody = (
-        <div className={styles.detail}>
+         
           <div className= {styles.row}>
-            <div><label>Titile</label>
+              <div><label>Linkdin Link</label>
             <InputControl
-            //   label="Title"
-            //   value={values.title}
-              placeholder="Enter title eg. Chat app"
+              label="Linkedin Link"
+              placeholder = "Enter your Linkdin profile Link"
+            //   value={values.linkedin}
+            
             //   onChange={(event) =>
-                // setValues((prev) => ({ ...prev, title: event.target.value }))
+            //     setValues((prev) => ({ ...prev, linkedin: event.target.value }))
             //   }
-            /> </div>
-            <div><label>Domain of the Project</label>
-          <InputControl
-            label="Overview"
-            // value={values.overview}
-            placeholder="Eg: Full stack, Front-End"
-            // onChange={(event) =>
-            //   setValues((prev) => ({ ...prev, overview: event.target.value }))
-            // }
-          /> </div>
-          </div>
-          
-
-          <div className= {styles.row}>
-              <div><label>Deployed Link</label>
-            <InputControl
-            //   label="Deployed Link"
-            //   value={values.link}
-              placeholder="Enter deployed link of project"
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, link: event.target.value }))
-            //   }
-            /> </div>
+            /></div>
+        
             <div><label>Github Link</label>
             <InputControl
               label="Github Link"
             //   value={values.github}
-              placeholder="Enter github link of project"
+              placeholder="Enter your Github profile link"
             //   onChange={(event) =>
-                // setValues((prev) => ({ ...prev, github: event.target.value }))
+            //     setValues((prev) => ({ ...prev, github: event.target.value }))
             //   }
-            /> </div>
+            /></div>
           </div>
-          <div className="{styles.column}">
-            <label>Enter project description</label>
-             
+          <div className= {styles.row}>
+              <div><label>Portfolio Link</label>
             <InputControl
+              label="Linkedin Link"
+              placeholder = "Enter your Porfolio profile Link"
+            //   value={values.linkedin}
             
-              placeholder="Line 1"
-              
-            //   value={values.points ? values.points[0] : ""}
-            //   onChange={(event) => handlePointUpdate(event.target.value, 0)}
-            />
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, linkedin: event.target.value }))
+            //   }
+            /></div>
+        
+            <div><label>Leetcode/Codechef Link</label>
             <InputControl
-              placeholder="Line 2"
-            //   value={values.points ? values.points[1] : ""}
-            //   onChange={(event) => handlePointUpdate(event.target.value, 1)}
-            />
-            <InputControl
-              placeholder="Line 3"
-            //   value={values.points ? values.points[2] : ""}
-            //   onChange={(event) => handlePointUpdate(event.target.value, 2)}
-            />
-            <InputControl
-              placeholder="Line 4"
-            //   value={values.points ? values.points[3] : ""}
-            //   onChange={(event) => handlePointUpdate(event.target.value, 3)}
-            />
+              label="Github Link"
+            //   value={values.github}
+              placeholder="Enter your Leetcode/Hacerranklink"
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, github: event.target.value }))
+            //   }
+            /></div>
           </div>
+          <div className= {styles.row}>
+              <div><label>Technical Skills</label>
+            <InputControl
+              label="Name"
+              placeholder="Enter your Technical skills."
+            //   value={values.name}
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, name: event.target.value }))
+            //   }
+            /></div>
+            <div><label>Certifications</label>
+            <InputControl
+              label="Title"
+            //   value={values.title}
+              placeholder="Enter your Certifications eg. AWS"
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, title: event.target.value }))
+            //   }
+            /></div>
+          </div>
+          
         </div>
       );
       const educationBody = (
@@ -295,122 +252,60 @@ function Editor(props) {
           </div>
         </div>
       );
-      const basicInfoBody = (
-        <div className={styles.detail}>
-          <div className= {styles.row}>
-              <div><label>Name</label>
+      const projectBody = (
+        <div className={styles.detail}> 
+            <div className={styles.extra}>
+                <div className= {styles.row}>
+            <div><label>Titile</label>
             <InputControl
-              label="Name"
-              placeholder="Enter your Full name eg. SAI"
-            //   value={values.name}
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, name: event.target.value }))
-            //   }
-            /></div>
-            <div><label>Registraion Number</label>
-            <InputControl
-              label="Title"
+            //   label="Title"
             //   value={values.title}
-              placeholder="Enter your Registraion Number "
+              placeholder="Enter title eg. Chat app"
             //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, title: event.target.value }))
+                // setValues((prev) => ({ ...prev, title: event.target.value }))
             //   }
-            /></div>
+            /> </div>
+            <div><label>Domain of the Project</label>
+          <InputControl
+            label="Overview"
+            // value={values.overview}
+            placeholder="Eg: Full stack, Front-End"
+            // onChange={(event) =>
+            //   setValues((prev) => ({ ...prev, overview: event.target.value }))
+            // }
+          /> </div>
           </div>
+          
+
           <div className= {styles.row}>
-              <div><label>Email</label>
+              <div><label>Deployed Link</label>
             <InputControl
-              label="Email"
-            //   value={values.email}
-              placeholder="Enter your Email"
+            //   label="Deployed Link"
+            //   value={values.link}
+              placeholder="Enter deployed link of project"
             //   onChange={(event) =>
-                // setValues((prev) => ({ ...prev, email: event.target.value }))
+            //     setValues((prev) => ({ ...prev, link: event.target.value }))
             //   }
-            /></div>
-            <div><label>Enter Phone</label>
-            <InputControl
-              label="Enter phone"
-            //   value={values.phone}
-              placeholder="Enter your Phone number"
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, phone: event.target.value }))
-            //   }
-            /></div>
-          </div>
-         
-          <div className= {styles.row}>
-              <div><label>Linkdin Link</label>
-            <InputControl
-              label="Linkedin Link"
-              placeholder = "Enter your Linkdin profile Link"
-            //   value={values.linkedin}
-            
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, linkedin: event.target.value }))
-            //   }
-            /></div>
-        
+            /> </div>
             <div><label>Github Link</label>
             <InputControl
               label="Github Link"
             //   value={values.github}
-              placeholder="Enter your Github profile link"
+              placeholder="Enter github link of project"
             //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, github: event.target.value }))
+                // setValues((prev) => ({ ...prev, github: event.target.value }))
             //   }
-            /></div>
+            /> </div>
+          </div> 
+
           </div>
-          <div className= {styles.row}>
-              <div><label>Portfolio Link</label>
-            <InputControl
-              label="Linkedin Link"
-              placeholder = "Enter your Porfolio profile Link"
-            //   value={values.linkedin}
-            
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, linkedin: event.target.value }))
-            //   }
-            /></div>
-        
-            <div><label>Leetcode/Codechef Link</label>
-            <InputControl
-              label="Github Link"
-            //   value={values.github}
-              placeholder="Enter your Leetcode/Hacerranklink"
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, github: event.target.value }))
-            //   }
-            /></div>
-          </div>
-          <div className= {styles.row}>
-              <div><label>Technical Skills</label>
-            <InputControl
-              label="Name"
-              placeholder="Enter your Technical skills."
-            //   value={values.name}
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, name: event.target.value }))
-            //   }
-            /></div>
-            <div><label>Certifications</label>
-            <InputControl
-              label="Title"
-            //   value={values.title}
-              placeholder="Enter your Certifications eg. AWS"
-            //   onChange={(event) =>
-            //     setValues((prev) => ({ ...prev, title: event.target.value }))
-            //   }
-            /></div>
-          </div>
-          
-        </div>
-      );
-      const achievementsBody = (
-        <div className={styles.detail}>
           <div className="{styles.column}">
-            <label>List your achievements</label>
+            <label>Enter project description</label>
+             
             <InputControl
+            
               placeholder="Line 1"
+              
             //   value={values.points ? values.points[0] : ""}
             //   onChange={(event) => handlePointUpdate(event.target.value, 0)}
             />
@@ -432,6 +327,114 @@ function Editor(props) {
           </div>
         </div>
       );
+      const workExpBody = (
+        <div className={styles.detail}>
+          <div className= {styles.row}>
+              <div><label>Titile</label>
+            <InputControl 
+              label="Title"
+              placeholder="Enter title eg. Frontend developer"
+            //   value={values.title}
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, title: event.target.value }))
+            //   }
+            /></div>
+
+            <div><label>Company Name</label>
+            <InputControl
+              label="Company Name"
+              placeholder="Enter company name eg. amazon"
+            //   value={values.companyName}
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, companyName: event.target.value }))
+            //   }
+            />
+            </div>
+          </div>
+          <div className= {styles.row}>
+              <div><label>Certification Link</label>
+            <InputControl
+              label="Certificate Link"
+              placeholder="Enter certificate link"
+            //   value={values.certificationLink}
+            //   onChange={(event) =>
+            //     setValues((prev) => ({
+            //       ...prev,
+            //       certificationLink: event.target.value,
+            //     }))
+            //   }
+            /> </div>
+            <div><label>Start Date</label>
+            <InputControl
+            //   label="Start Date"
+              type="date"
+              placeholder="Enter start date of work"
+            //   value={values.startDate}
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, startDate: event.target.value }))
+            //   }
+            />
+            </div>
+          </div>
+          <div className= {styles.row}>
+          <div><label>Enter work description</label>
+            <InputControl
+              placeholder="Line 1"
+            //   value={values.points ? values.points[0] : ""}
+            //   onChange={(event) => handlePointUpdate(event.target.value, 0)}
+            />
+            <InputControl
+              placeholder="Line 2"
+            //   value={values.points ? values.points[1] : ""}
+            //   onChange={(event) => handlePointUpdate(event.target.value, 1)}
+            />
+            <InputControl
+              placeholder="Line 3"
+            //   value={values.points ? values.points[2] : ""}
+            //   onChange={(event) => handlePointUpdate(event.target.value, 2)}
+            /></div>
+            <div><label>End Date</label>
+            <InputControl
+            //   label="End Date"
+              type="date"
+              placeholder="Enter end date of work"
+            //   value={values.endDate}
+            //   onChange={(event) =>
+            //     setValues((prev) => ({ ...prev, endDate: event.target.value }))
+            //   }
+            /></div>
+          </div>
+    
+          
+        </div>
+      );
+    //   const achievementsBody = (
+    //     <div className={styles.detail}>
+    //       <div className="{styles.column}">
+    //         <label>List your achievements</label>
+    //         <InputControl
+    //           placeholder="Line 1"
+    //         //   value={values.points ? values.points[0] : ""}
+    //         //   onChange={(event) => handlePointUpdate(event.target.value, 0)}
+    //         />
+    //         <InputControl
+    //           placeholder="Line 2"
+    //         //   value={values.points ? values.points[1] : ""}
+    //         //   onChange={(event) => handlePointUpdate(event.target.value, 1)}
+    //         />
+    //         <InputControl
+    //           placeholder="Line 3"
+    //         //   value={values.points ? values.points[2] : ""}
+    //         //   onChange={(event) => handlePointUpdate(event.target.value, 2)}
+    //         />
+    //         <InputControl
+    //           placeholder="Line 4"
+    //         //   value={values.points ? values.points[3] : ""}
+    //         //   onChange={(event) => handlePointUpdate(event.target.value, 3)}
+    //         />
+    //       </div>
+    //     </div>
+    //   );
       const cocurricularbody = (
         <div className={styles.detail}>
           <div className= {styles.row}>
@@ -586,8 +589,8 @@ function Editor(props) {
             return projectBody;
           case sections.education:
             return educationBody;
-          case sections.achievement:
-            return achievementsBody;
+        //   case sections.achievement:
+        //     return achievementsBody;
           case sections.cocurricular:
             return cocurricularbody;
           case sections.other:
@@ -613,19 +616,11 @@ function Editor(props) {
         </div>
 
         <div className={styles.body}>
-            {/* <InputControl 
-            Label="Title" 
-            placeholder = "Enter Title"/>   */}
-           {/* <div className={styles.chip}>
-             <div className={styles.chip}>
-               <p>Project 1</p>
-               
-             </div>
-             <div className={styles.chip}>
-               <p>Project 1</p>
-               
+        <div><label>Title</label>
+            <InputControl 
+            
+            placeholder = "Enter Title"/>  
            </div>
-           </div> */}
 
             {generateBody()}
     </div>
