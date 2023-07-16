@@ -616,10 +616,23 @@ function Editor(props) {
         </div>
 
         <div className={styles.body}>
-        <div><label>Title</label>
+        <div><label>Title</label></div>
             <InputControl 
-            
-            placeholder = "Enter Title"/>  
+            placeholder = "Enter Title"/> 
+            <div className={styles.chips} style={{display: "flex"}}>
+             <div className={styles.chip} > 
+
+                <button>
+                  <div className={styles.buttonn}
+                  ><p> Project 1 </p>
+                  </div>
+                </button>
+             </div> 
+             <div className={styles.chip}>
+             <button>
+                  <div><p> Project 2 </p></div>
+              </button>
+             </div> 
            </div>
 
             {generateBody()}
