@@ -1,24 +1,53 @@
 import React from 'react';
 import Editor from '../Editor/Editor';
 import styles from './Body.module.css';
+import { useState } from 'react';
 
 function Body() {
   const sections = {
-    basicInfo: "Basic-Info",
-    education: "Education",
-    project: "Academic Projects",
-    workExp: "Work Experience",
-    cocurricular: "Co-Curricular",
-    // summary: "Summary",
-    other: "Extra-Curricular and achievements",
-    // basicInfo: "Basic Info",
-    // education: "Education",
-    // academicProjects: "Academic Projects",
-    // workExp: "Work Experience",
-    // cocurricular: "Co-Curricular",
-    // // achievement: "Achievements",
-    // other: "Extra-Curricular and Achievements",
+    BasicInfo: "Basic-Info",
+    Education: "Education",
+    Project: "Academic Projects",
+    WorkExp: "Work Experience",
+    Cocurricular: "Co-Curricular",
+    Other: "Extra-Curricular and cocurriculars",
+  
   };
+  const [resumeInformation, setresumeInformation] = useState({
+    [sections.BasicInfo]: {
+      id: sections.BasicInfo,
+      sectionTitle: sections.BasicInfo,
+      detail: {},
+    },
+    [sections.Education]: {
+      id: sections.Education,
+      sectionTitle: sections.Education,
+      details: [],
+    },
+    [sections.Project]: {
+      id: sections.Project,
+      sectionTitle: sections.Project,
+      details: [],
+    },
+    [sections.WorkExp]: {
+      id: sections.WorkExp,
+      sectionTitle: sections.WorkExp,
+      details: [],
+    },
+    
+    [sections.Cocurricular]: {
+      id: sections.Cocurricular,
+      sectionTitle: sections.Cocurricular,
+      points: [],
+    },
+    
+    [sections.Other]: {
+      id: sections.Other,
+      sectionTitle: sections.Other,
+      detail: "",
+    },
+  });
+
   return (
     <div className ={styles.container}>
         <p className ={styles.heading}>Resume Maker</p>
@@ -26,7 +55,7 @@ function Body() {
           <button>Download Resume</button>
         </div>
         <div className={styles.main}>
-          <Editor sections={sections} />
+          <Editor sections={sections} information={resumeInformation}/>
         </div>
     </div>
     
