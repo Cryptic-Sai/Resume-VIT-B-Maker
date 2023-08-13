@@ -588,7 +588,44 @@ function Editor(props) {
     setActiveInformation(actveInfo);
     setsectionTitle([activeSectionKey]);
     setValues({
+      name: actveInfo?.detail?.name || "" ,
+      overview: actveInfo?.details 
+                ? actveInfo. details[0]?.overview || "" : "",
+      certificationLink: actveInfo?.details 
+                ? actveInfo. details[0]?.certificationLink || "": "",
+      link: actveInfo?.details 
+            ? actveInfo. details[0]?.link || "" : "",
+      startDate: actveInfo?.details 
+            ? actveInfo. details[0]?.startDate || "" : "",
+      endDate: actveInfo?.details 
+            ? actveInfo. details[0]?.endDate || "" : "",
       
+      points: actveInfo?.details 
+        ? actveInfo. details[0]?.points 
+          ? [...actveInfo.details[0]?.points] 
+          : "" 
+          // ye vala neeche vala case achievements vala points hai
+        : actveInfo?.points
+        ? [...actveInfo.points]
+        : "",
+
+      title: actveInfo?.details
+           ? actveInfo.details[0]?.title || ""
+           : actveInfo?.detail?.title || "",
+      
+      registraionNumber: actveInfo?.detail?.registraionNumber || "",
+      email: actveInfo?.detail?.email || "",
+      phone: actveInfo?.detail?.phone || "",
+      linkdin: actveInfo?.detail?.linkdin || "",
+
+      github: actveInfo?.details
+            ? actveInfo.details[0]?.github || ""
+            : actveInfo?.detail?.github || "",
+
+      portfolio: actveInfo?.detail?.portfolio || "",
+      leetcodeCodechef: actveInfo?.detail?.leetcodeCodechef || "",
+      technical: actveInfo?.detail?.technical || "",
+      certifications: actveInfo?.detail?.certifications || "",
     })
   }, [activeSectionKey]);
 
