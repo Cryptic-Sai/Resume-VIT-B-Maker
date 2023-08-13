@@ -11,7 +11,7 @@ function Body() {
     WorkExp: "Work Experience",
     Cocurricular: "Co-Curricular",
     Other: "Extra-Curricular and cocurriculars",
-  
+
   };
   const [resumeInformation, setresumeInformation] = useState({
     [sections.BasicInfo]: {
@@ -34,13 +34,13 @@ function Body() {
       sectionTitle: sections.WorkExp,
       details: [],
     },
-    
+
     [sections.Cocurricular]: {
       id: sections.Cocurricular,
       sectionTitle: sections.Cocurricular,
       points: [],
     },
-    
+
     [sections.Other]: {
       id: sections.Other,
       sectionTitle: sections.Other,
@@ -49,19 +49,18 @@ function Body() {
   });
 
   return (
-    <div className ={styles.container}>
-        <p className ={styles.heading}>Resume Maker</p>
-        <div className ={styles.toolbar}>
-          <button>Download Resume</button>
-        </div>
-        <div className={styles.main}>
-          <Editor sections={sections} information={resumeInformation}/>
-        </div>
+    <div className={styles.container}>
+      <p className={styles.heading}>Resume Maker</p>
+      <div className={styles.toolbar}>
+        <button>Download Resume</button>
+      </div>
+      <div className={styles.main}>
+        <Editor sections={sections} information={resumeInformation} />
+      </div>
     </div>
-    
+
   )
 }
 
 export default Body
 
- 
