@@ -598,7 +598,7 @@ function Editor(props) {
       startDate: actveInfo?.details 
             ? actveInfo. details[0]?.startDate || "" : "",
       endDate: actveInfo?.details 
-            ? actveInfo. details[0]?.endDate || "" : "",
+            ? actveInfo. details[0]?.endDate || "" : "", 
       
       points: actveInfo?.details 
         ? actveInfo. details[0]?.points 

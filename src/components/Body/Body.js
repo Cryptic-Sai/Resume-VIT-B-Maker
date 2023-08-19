@@ -55,7 +55,9 @@ function Body() {
         <button>Download Resume</button>
       </div>
       <div className={styles.main}>
-        <Editor sections={sections} information={resumeInformation} />
+        <Editor sections={sections} 
+        information={resumeInformation}
+        setInformmation ={setresumeInformation} />
       </div>
     </div>
 
