@@ -6,14 +6,14 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 30px;
-    background-color: #f5f5f5;
-    min-height: 65vh;
+    background-color: #e4e0e0;
+    min-height: 60vh;
 }
 
 .heading{
     /* padding: 30px;
     text-align: center; */
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: bold;
     /* text-decoration-color: rgb(218, 102, 218); */
     margin: 0 auto;

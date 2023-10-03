@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 30px;
+    /* background-color: #d3d3d3; */
 }
 
 .heading{
@@ -29,7 +30,7 @@
 }
 .toolbar button{
    
-   padding: 6px 16px;
+   padding: 9px 16px;
    border-radius: 12px;
    height: 100%;
    background-color: #91787e;
@@ -39,7 +40,7 @@
    border: none;
    letter-spacing: 2px;
    cursor: pointer;
-   /* transition-duration: 4ms; */
+   transition-duration: 4ms;
 }
 /* 
 .button :hover{
